@@ -38,7 +38,7 @@ DESCRIPTION:
 [Process exited 0]
 ~~~
 
-I recommend to add a shortcut to launch quickly.
+I recommend to add a shortcut into `.vimrc` to launch quickly.
 The following example enables to run `KubeExplain` with `Leader`(backslash by default) followed by `k`
 
 ~~~vim
