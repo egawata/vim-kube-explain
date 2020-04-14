@@ -44,8 +44,9 @@ function! kubeExplain#Explain()
     return
   endif
 
-  execute '!kubectl explain ' . kind . '.' . join(keys, '.')
-
+  exec 'new'
+  let cmd = 'kubectl explain ' . kind . '.' . join(keys, '.')
+  call termopen(cmd)
 endfunction
 
 let &cpo = s:save_cpo

@@ -11,7 +11,7 @@ let g:loaded_kube_explain = 1
 let s:save_cpo = &cpo
 set cpo&vim
 
-command! KubeExplain call kubeExplain#Explain()<CR>
+command! -nargs=0 KubeExplain call kubeExplain#Explain()
 
 let &cpo = s:save_cpo
 unlet s:save_cpo
